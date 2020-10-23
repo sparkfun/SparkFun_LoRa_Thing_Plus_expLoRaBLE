@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -26,11 +26,11 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -52,13 +52,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -183,6 +183,10 @@
 <dimension x1="2.54" y1="0" x2="2.54" y2="58.42" x3="-8.89" y3="29.21" textsize="1.27" layer="47" unit="inch"/>
 <text x="11.43" y="0.3175" size="1.27" layer="16" font="vector" ratio="15" rot="MR0" align="bottom-center">v01</text>
 <text x="-30.48" y="-39.37" size="5.08" layer="51" font="vector">4-LAYER BOARD</text>
+<text x="0.635" y="17.78" size="0.8128" layer="1" font="vector" ratio="25">1</text>
+<text x="1.397" y="17.78" size="0.8128" layer="2" font="vector" ratio="25">2</text>
+<text x="0.635" y="16.891" size="0.8128" layer="15" font="vector" ratio="25">3</text>
+<text x="2.032" y="16.891" size="0.8128" layer="16" font="vector" ratio="25" rot="MR0">4</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:23925113">
@@ -12585,7 +12589,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="16.7386" y="23.5712" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="LOGO2" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="QWIIC_5MM" value="QWIIC_LOGO_5MM" x="6.858" y="9.525" smashed="yes" rot="R90"/>
-<element name="LOGO3" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="SFE_LOGO_NAME_FLAME_.1" package3d_urn="urn:adsk.eagle:package:37124/1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="17.272" y="9.4615" smashed="yes" rot="MR0"/>
+<element name="LOGO3" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="SFE_LOGO_NAME_FLAME_.1" package3d_urn="urn:adsk.eagle:package:37124/1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="17.272" y="10.0965" smashed="yes" rot="MR0"/>
 <element name="U$65" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="SFE_LOGO_FLAME_.2" value="" x="18.3515" y="4.3561" smashed="yes"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" package="OSHW-LOGO-S" package3d_urn="urn:adsk.eagle:package:37099/1" value="OSHW-LOGOS" x="11.43" y="55.245" smashed="yes" rot="MR0"/>
 <element name="TP4" library="SparkFun-Connectors" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="3.81" y="7.62" smashed="yes"/>
@@ -12662,8 +12666,8 @@ design rules under a new name.</description>
 <element name="U$68" library="output" package="PWR0" value="" x="11.43" y="37.719" smashed="yes" rot="R90"/>
 <element name="U$100" library="output" package="RX0" value="" x="12.954" y="37.084" smashed="yes" rot="R90"/>
 <element name="U$101" library="output" package="TX0" value="" x="14.4526" y="37.1856" smashed="yes" rot="R90"/>
-<element name="U$2" library="output" package="LORA_THING_PLUS0" value="" x="11.43" y="8.89" smashed="yes" rot="MR0"/>
-<element name="U$3" library="output" package="EXPLORABLE0" value="" x="11.43" y="6.35" smashed="yes" rot="MR0"/>
+<element name="U$2" library="output" package="LORA_THING_PLUS0" value="" x="11.303" y="9.652" smashed="yes" rot="MR0"/>
+<element name="U$3" library="output" package="EXPLORABLE0" value="" x="11.303" y="7.62" smashed="yes" rot="MR0"/>
 <element name="U$1" library="output" package="#16#SDA1#0" value="" x="1.7526" y="52.07" smashed="yes" rot="MR0"/>
 <element name="U$4" library="output" package="#17#SCL1#0" value="" x="1.7526" y="49.53" smashed="yes" rot="MR0"/>
 <element name="U$5" library="output" package="#3#A6#0" value="" x="1.7526" y="46.99" smashed="yes" rot="MR0"/>
@@ -12805,7 +12809,7 @@ design rules under a new name.</description>
 <via x="10.1219" y="37.2618" extent="1-16" drill="0.3048"/>
 <via x="8.0518" y="25.273" extent="1-16" drill="0.3048"/>
 <via x="6.985" y="6.9215" extent="1-16" drill="0.3048"/>
-<via x="14.1605" y="7.62" extent="1-16" drill="0.3048"/>
+<via x="14.1605" y="8.128" extent="1-16" drill="0.3048"/>
 <via x="6.1595" y="6.7945" extent="1-16" drill="0.3048"/>
 <via x="15.9385" y="7.366" extent="1-16" drill="0.3048"/>
 <via x="4.8006" y="13.6144" extent="1-16" drill="0.3048"/>
@@ -12877,6 +12881,7 @@ design rules under a new name.</description>
 <via x="3.175" y="53.213" extent="1-16" drill="0.3048"/>
 <wire x1="18.7579" y1="30.3149" x2="18.796" y2="30.353" width="0.2032" layer="1"/>
 <wire x1="17.018" y1="29.0682" x2="17.018" y2="29.845" width="0.2" layer="1"/>
+<wire x1="17.018" y1="29.0682" x2="17.018" y2="28.321" width="0.2032" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="C5" pad="1"/>
@@ -13705,6 +13710,8 @@ design rules under a new name.</description>
 <errors>
 <approved hash="19,1,e7197f1c3f33e2e9"/>
 <approved hash="19,16,66746cd9ba2237d2"/>
+<approved hash="23,1,60b5dc49dc2860d4"/>
+<approved hash="23,1,485aca9ac9064bc6"/>
 </errors>
 </board>
 </drawing>
