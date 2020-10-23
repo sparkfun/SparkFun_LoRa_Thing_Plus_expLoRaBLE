@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -26,11 +26,11 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -52,13 +52,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -2530,6 +2530,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="6" x="-0.65" y="0.7874" dx="0.7366" dy="0.3556" layer="1" rot="R270"/>
 <text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<circle x="-1.27" y="-1.016" radius="0.127" width="0.254" layer="21"/>
 </package>
 </packages>
 </library>
@@ -11913,7 +11914,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <library name="JTD_Consulting">
 <packages>
 <package name="LGA81">
-<circle x="-6.2" y="6.2" radius="0.111803125" width="0" layer="21"/>
 <circle x="-4.05" y="5.4" radius="0.3" width="0" layer="31"/>
 <circle x="-5.4" y="5.4" radius="0.3" width="0" layer="31"/>
 <circle x="-2.7" y="5.4" radius="0.3" width="0" layer="31"/>
@@ -12168,6 +12168,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="J9" x="5.4" y="-5.4" dx="0.7" dy="0.7" layer="1" stop="no" cream="no"/>
 <text x="-6.3" y="6.65" size="0.25" layer="25">&gt;NAME</text>
 <text x="-6.25" y="-6.85" size="0.25" layer="27">&gt;VALUE</text>
+<circle x="-6.2" y="6.835" radius="0.2032" width="0" layer="21"/>
 </package>
 </packages>
 </library>

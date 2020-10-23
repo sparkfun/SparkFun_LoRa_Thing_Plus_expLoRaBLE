@@ -27209,6 +27209,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="6" x="-0.65" y="0.7874" dx="0.7366" dy="0.3556" layer="1" rot="R270"/>
 <text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+<circle x="-1.27" y="-1.016" radius="0.127" width="0.254" layer="21"/>
 </package>
 <package name="RF_4060A1_TDK-L">
 <wire x1="1.0668" y1="-0.2286" x2="1.0668" y2="0.2286" width="0.1524" layer="21"/>
@@ -27886,7 +27887,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <library name="JTD_Consulting">
 <packages>
 <package name="LGA81">
-<circle x="-6.2" y="6.2" radius="0.111803125" width="0" layer="21"/>
 <circle x="-4.05" y="5.4" radius="0.3" width="0" layer="31"/>
 <circle x="-5.4" y="5.4" radius="0.3" width="0" layer="31"/>
 <circle x="-2.7" y="5.4" radius="0.3" width="0" layer="31"/>
@@ -28141,6 +28141,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="J9" x="5.4" y="-5.4" dx="0.7" dy="0.7" layer="1" stop="no" cream="no"/>
 <text x="-6.3" y="6.65" size="0.25" layer="25">&gt;NAME</text>
 <text x="-6.25" y="-6.85" size="0.25" layer="27">&gt;VALUE</text>
+<circle x="-6.2" y="6.835" radius="0.2032" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
