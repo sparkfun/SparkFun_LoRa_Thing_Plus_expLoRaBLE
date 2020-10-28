@@ -29711,6 +29711,11 @@ to disable power LED</text>
 <text x="168.656" y="11.43" size="2.54" layer="94" font="vector">Daniel Dobre</text>
 <wire x1="68.58" y1="96.52" x2="68.58" y2="0" width="0.2032" layer="97" style="longdash"/>
 <text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v01</text>
+<text x="10.16" y="17.78" size="1.778" layer="97" font="vector">RTS Jumper is optional.
+Closing this allows the user 
+reset the module from the 
+CH340E IC via software.</text>
+<wire x1="27.94" y1="50.8" x2="17.78" y2="30.48" width="0.2032" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="R12" gate="G$1" x="106.68" y="71.12" smashed="yes" rot="R90">
