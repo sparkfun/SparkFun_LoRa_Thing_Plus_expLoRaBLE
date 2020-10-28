@@ -28751,7 +28751,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="LOGO4" library="SparkFun-Aesthetics" deviceset="SPECIAL_INSTRUCTIONS" device="-ORDERING"/>
 <part name="TP6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="TP_15TH_THRU" package3d_urn="urn:adsk.eagle:package:38288/1"/>
 <part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
-<part name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
+<part name="RTS" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -29878,8 +29878,8 @@ to disable power LED</text>
 <attribute name="NAME" x="14.859" y="54.864" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="14.859" y="44.704" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
-<instance part="JP1" gate="G$1" x="27.94" y="53.34" smashed="yes">
-<attribute name="NAME" x="25.4" y="55.88" size="1.778" layer="95" font="vector"/>
+<instance part="RTS" gate="G$1" x="27.94" y="53.34" smashed="yes">
+<attribute name="NAME" x="26.162" y="55.372" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -30066,7 +30066,7 @@ to disable power LED</text>
 <junction x="43.18" y="53.34"/>
 <junction x="38.1" y="53.34"/>
 <wire x1="38.1" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="RTS" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="53.34" x2="34.1884" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="53.34" x2="34.1884" y2="53.34" width="0.1524" layer="91"/>
 </segment>
@@ -30224,7 +30224,7 @@ to disable power LED</text>
 <net name="N$15" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="RTS" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="53.34" x2="22.86" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
