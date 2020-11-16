@@ -28773,7 +28773,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="154.94" y="180.34" size="2.54" layer="94" font="vector" ratio="15">3.3V Regulator</text>
 <text x="193.04" y="174.498" size="1.778" layer="97" font="vector">VIN: 6V Max</text>
 <text x="168.656" y="11.43" size="2.54" layer="94" font="vector">Daniel Dobre</text>
-<text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v01</text>
+<text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v02</text>
 <text x="222.25" y="179.07" size="1.778" layer="97" font="vector">Cut LED jumper
 to disable power LED</text>
 <text x="194.056" y="138.43" size="1.778" layer="97" font="vector">Cut ISO jumper to isolate 
@@ -29710,7 +29710,7 @@ to disable power LED</text>
 <wire x1="147.32" y1="96.52" x2="147.32" y2="185.42" width="0.2032" layer="97" style="longdash"/>
 <text x="168.656" y="11.43" size="2.54" layer="94" font="vector">Daniel Dobre</text>
 <wire x1="68.58" y1="96.52" x2="68.58" y2="0" width="0.2032" layer="97" style="longdash"/>
-<text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v01</text>
+<text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v02</text>
 <text x="10.16" y="17.78" size="1.778" layer="97" font="vector">RTS Jumper is optional.
 Closing this allows the user 
 reset the module from the 
