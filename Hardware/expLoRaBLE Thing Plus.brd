@@ -15772,7 +15772,7 @@ design rules under a new name.</description>
 <element name="TP5" library="SparkFun-Connectors" package="TP_15TH" value="TEST-POINTTP_15TH_THRU" x="2.54" y="8.89" smashed="yes"/>
 <element name="U3" library="JTD_Consulting" package="LGA81" value="NM180100" x="10.1973" y="47.2069" smashed="yes">
 <attribute name="NAME" x="3.8973" y="53.8569" size="0.25" layer="25"/>
-<attribute name="PROD_ID" value="IC-15466" x="10.1973" y="47.2069" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-15464" x="10.1973" y="47.2069" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="3.2473" y="39.5569" size="0.25" layer="27"/>
 </element>
 <element name="U6" library="DPX202700DT" package="RF_4060A1_TDK" value="DPX202700DT-4162A1" x="11.3408" y="56.0806" smashed="yes" rot="R90">

@@ -540,7 +540,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-15466" constant="no"/>
+<attribute name="PROD_ID" value="IC-15464" constant="no"/>
 </technology>
 </technologies>
 </device>
