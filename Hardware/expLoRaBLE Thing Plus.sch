@@ -29966,6 +29966,7 @@ to disable power LED</text>
 <wire x1="233.68" y1="170.18" x2="231.14" y2="177.546" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="216.408" y1="162.306" x2="208.28" y2="144.272" width="0.1524" layer="97" style="shortdash"/>
 <text x="2.54" y="127" size="1.778" layer="97" font="vector">VCC Range: 2.8-3.6V</text>
+<text x="47.498" y="94.488" size="1.27" layer="97" rot="R180">*Custom ASB boot pin*</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -30817,16 +30818,16 @@ to disable power LED</text>
 </net>
 <net name="RXI-0" class="0">
 <segment>
-<wire x1="106.68" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
-<label x="109.22" y="99.06" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="GPIO23"/>
+<wire x1="106.68" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+<label x="109.22" y="53.34" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="GPIO49"/>
 </segment>
 </net>
 <net name="TXO-0" class="0">
 <segment>
-<wire x1="106.68" y1="101.6" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
-<label x="109.22" y="101.6" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="GPIO22"/>
+<wire x1="106.68" y1="55.88" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
+<label x="109.22" y="55.88" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="GPIO48"/>
 </segment>
 </net>
 <net name="LORA_RF" class="0">
@@ -30859,9 +30860,9 @@ to disable power LED</text>
 </net>
 <net name="D10/SWCH" class="0">
 <segment>
-<wire x1="106.68" y1="55.88" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
-<label x="109.22" y="55.88" size="1.27" layer="95" font="vector" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="GPIO48"/>
+<wire x1="63.5" y1="93.98" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
+<label x="60.96" y="93.98" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="GPIO4"/>
 </segment>
 </net>
 <net name="N$14" class="0">
