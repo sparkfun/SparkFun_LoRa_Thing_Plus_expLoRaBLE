@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="3" visible="yes" active="yes"/>
@@ -15366,13 +15366,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 </packages>
 </library>
@@ -15683,7 +15683,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="7.428" y="38.1963" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="VALUE" x="3.0338" y="38.4503" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
-<element name="J6" library="SparkFun-Connectors" package="JST04_1MM_RA" override_package3d_urn="urn:adsk.eagle:package:23933495/2" override_package_urn="urn:adsk.eagle:footprint:23933496/1" value="QWIIC_RIGHT_ANGLE" x="5.08" y="9.398" smashed="yes" rot="R270">
+<element name="J6" library="SparkFun-Connectors" package="JST04_1MM_RA" override_package3d_urn="urn:adsk.eagle:package:23933495/2" override_package_urn="urn:adsk.eagle:footprint:23933496/1" value="QWIIC_RA" x="5.08" y="9.398" smashed="yes" rot="R270">
 <attribute name="NAME" x="2.921" y="10.795" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="CONN-13694" x="-19.05" y="-31.242" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="QWIIC_RIGHT_ANGLE" x="1.778" y="11.049" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
@@ -15930,7 +15930,7 @@ design rules under a new name.</description>
 </element>
 <element name="C13" library="SparkFun-Capacitors" package="0603" value="0.1uF" x="15.62861875" y="25.5930375" smashed="yes">
 <attribute name="NAME" x="15.62861875" y="26.3550375" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-08604" x="15.62861875" y="21.7830375" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="PROD_ID" value="CAP-00810" x="15.62861875" y="21.7830375" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="15.62861875" y="24.8310375" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 </elements>
