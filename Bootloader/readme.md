@@ -126,9 +126,9 @@ This was used to create the info0 file to work with the Ambiq Secure Bootloader 
 
 
 Where:
---u0 0x1C200c0 = 115200 baud (0x1c200)
---main 0xC000 = main image location (0xC000)
--- u1 0xFFFF3031 = UART-TX (0x30 - pin 48) and UART-RX (0x31 - pin 49)
---gpio 0x16 = GPIO override *for the boot pin* (0x16, GPIO22)
---gpiolvl 1 = active high boot setup (note, the default is active low, and the only SFE design as of 1/29/2021 that had active low was the edge, all others (e.g. the artemis and expLoRaBLE) are active high setups)
---wTO 2500 = timeout failures set to 2500ms
+* --u0 0x1C200c0 = 115200 baud (0x1c200)
+* --main 0xC000 = main image location (0xC000)
+* -- u1 0xFFFF3031 = UART-TX (0x30 - pin 48) and UART-RX (0x31 - pin 49)
+* --gpio 0x16 = GPIO override *for the boot pin* (0x16, GPIO22)
+* --gpiolvl 1 = active high boot setup (note, the default is active low, and the only SFE design as of 1/29/2021 that had active low was the edge, all others (e.g. the artemis and expLoRaBLE) are active high setups)
+* --wTO 2500 = timeout failures set to 2500ms
