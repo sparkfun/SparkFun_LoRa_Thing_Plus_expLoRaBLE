@@ -6,16 +6,17 @@ Note, to program info0 properly, do these things:
 2. Open a CMD window.
 3. Navigate to the bootloader directory of this repo.
 4. Run JLINK with the included commandfile like so:
-    "C:\Program Files (x86)\SEGGER\JLink\jlink.exe" -CommanderScript jlink-prog-info0.txt
+
+* *"C:\Program Files (x86)\SEGGER\JLink\jlink.exe" -CommanderScript jlink-prog-info0.txt*
 
 
 ## Special notes about programming
 
-* You cannot effectively program info0 binaries using J-flash Light GUI. You must use JLINK commander with a commandfile. A command file can include calls to "ROM helper functions", which are essential to correctly (actually) programming the info0 memory locations on the MCU. These are the commands to the ROM helper functions:
+* You cannot effectively program info0 binaries using J-flash Light GUI. You must use JLINK commander with a commandfile. A command file can include calls to "ROM helper functions", which are essential to correctly (actually) programming the info0 memory locations on the MCU. [This screenshot](https://github.com/sparkfun/SparkFun_LoRa_Thing_Plus_expLoRaBLE/blob/master/Documentation/programming_script_screenshot_highligh.png) shows the commands to the ROM helper functions.
 
 * You can call Jlink.exe from command line with the commandfile as an argument. Note, you may have to include the complete paths to jlink.exe and the commanderfile. Also note, you need to navigate your CMD into this directory first.
 
-C:\Users\pete.lewis\Documents\GitHub\SparkFun_LoRa_Thing_Plus_expLoRaBLE\Bootloader>"C:\Program Files (x86)\SEGGER\JLink\jlink.exe" -CommanderScript jlink-prog-info0.txt
+* *C:\Users\pete.lewis\Documents\GitHub\SparkFun_LoRa_Thing_Plus_expLoRaBLE\Bootloader>"C:\Program Files (x86)\SEGGER\JLink\jlink.exe" -CommanderScript jlink-prog-info0.txt*
 
 This is the readout you should see:
 
