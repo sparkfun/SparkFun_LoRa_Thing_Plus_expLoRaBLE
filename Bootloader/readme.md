@@ -1,18 +1,15 @@
-This was used to create the info0 file to work with the Ambiq Secure Bootloader in the expLoRaBLE design:
+## Programming info0 binary
 
-    python create_info0.py --valid 1 info0_115200_gpio22_active_high --pl 1 --u0 0x1c200c0 --u1 0xFFFF3031 --u2 0x2 --u3 0x0 --u4 0x0 --u5 0x0 --main 0xC000 --gpio 0x16 --version 0 --wTO 2500 --gpiolvl 1 --chip apollo3
+Note, to program info0 properly, do these things:
 
-
-Where:
---u0 0x1C200c0 = 115200 baud (0x1c200)
---main 0xC000 = main image location (0xC000)
--- u1 0xFFFF3031 = UART-TX (0x30 - pin 48) and UART-RX (0x31 - pin 49)
---gpio 0x16 = GPIO override *for the boot pin* (0x16, GPIO22)
---gpiolvl 1 = active high boot setup (note, the default is active low, and the only SFE design as of 1/29/2021 that had active low was the edge, all others (e.g. the artemis and expLoRaBLE) are active high setups)
---wTO 2500 = timeout failures set to 2500ms
+1. Clone this repo.
+2. Open a CMD window.
+3. Navigate to the bootloader directory of this repo.
+4. Run JLINK with the included commandfile like so:
+    "C:\Program Files (x86)\SEGGER\JLink\jlink.exe" -CommanderScript jlink-prog-info0.txt
 
 
-Special notes about programming.
+## Special notes about programming
 
 * You cannot effectively program info0 binaries using J-flash Light GUI. You must use JLINK commander with a commandfile. A command file can include calls to "ROM helper functions", which are essential to correctly (actually) programming the info0 memory locations on the MCU. These are the commands to the ROM helper functions:
 
@@ -116,3 +113,21 @@ This is the readout you should see:
 
 
     Script processing completed.
+    
+
+
+
+## Info0 binary creation info
+
+This was used to create the info0 file to work with the Ambiq Secure Bootloader in the expLoRaBLE design:
+
+    python create_info0.py --valid 1 info0_115200_gpio22_active_high --pl 1 --u0 0x1c200c0 --u1 0xFFFF3031 --u2 0x2 --u3 0x0 --u4 0x0 --u5 0x0 --main 0xC000 --gpio 0x16 --version 0 --wTO 2500 --gpiolvl 1 --chip apollo3
+
+
+Where:
+--u0 0x1C200c0 = 115200 baud (0x1c200)
+--main 0xC000 = main image location (0xC000)
+-- u1 0xFFFF3031 = UART-TX (0x30 - pin 48) and UART-RX (0x31 - pin 49)
+--gpio 0x16 = GPIO override *for the boot pin* (0x16, GPIO22)
+--gpiolvl 1 = active high boot setup (note, the default is active low, and the only SFE design as of 1/29/2021 that had active low was the edge, all others (e.g. the artemis and expLoRaBLE) are active high setups)
+--wTO 2500 = timeout failures set to 2500ms
