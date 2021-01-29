@@ -16,7 +16,7 @@ Special notes about programming.
 
 * You cannot effectively program info0 binaries using J-flash Light GUI. You must use JLINK commander with a commandfile. A command file can include calls to "ROM helper functions", which are essential to correctly (actually) programming the info0 memory locations on the MCU. These are the commands to the ROM helper functions:
 
-* You can call Jlink.exe from command line with the commandfile as an argument, or you can use the batch file, program_info0.bat, which simply calls jlink with the commanderScript file as an argument. Note, you may have to include the complete paths to jlink.exe and the commanderfile. Also note, you need to navigate your CMD into this directory first.
+* You can call Jlink.exe from command line with the commandfile as an argument. Note, you may have to include the complete paths to jlink.exe and the commanderfile. Also note, you need to navigate your CMD into this directory first.
 
 C:\Users\pete.lewis\Documents\GitHub\SparkFun_LoRa_Thing_Plus_expLoRaBLE\Bootloader>"C:\Program Files (x86)\SEGGER\JLink\jlink.exe" -CommanderScript jlink-prog-info0.txt
 
