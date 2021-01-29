@@ -4,21 +4,21 @@ This was used to create the info0 file to work with the Ambiq Secure Bootloader 
 
 
 Where:
---u0 0x1C200c0 = 115200 baud (0x1c200)
---main 0xC000 = main image location (0xC000)
--- u1 0xFFFF3031 = UART-TX (0x30 - pin 48) and UART-RX (0x31 - pin 49)
---gpio 0x16 = GPIO override *for the boot pin* (0x16, GPIO22)
---gpiolvl 1 = active high boot setup (note, the default is active low, and the only SFE design as of 1/29/2021 that had active low was the edge, all others (e.g. the artemis and expLoRaBLE) are active high setups)
---wTO 2500 = timeout failures set to 2500ms
+* --u0 0x1C200c0 = 115200 baud (0x1c200)
+* --main 0xC000 = main image location (0xC000)
+* -- u1 0xFFFF3031 = UART-TX (0x30 - pin 48) and UART-RX (0x31 - pin 49)
+* --gpio 0x16 = GPIO override *for the boot pin* (0x16, GPIO22)
+* --gpiolvl 1 = active high boot setup (note, the default is active low, and the only SFE design as of 1/29/2021 that had active low was the edge, all others (e.g. the artemis and expLoRaBLE) are active high setups)
+* --wTO 2500 = timeout failures set to 2500ms
 
 
 Special notes about programming.
 
 * You cannot effectively program info0 binaries using J-flash Light GUI. You must use JLINK commander with a commandfile. A command file can include calls to "ROM helper functions", which are essential to correctly (actually) programming the info0 memory locations on the MCU. These are the commands to the ROM helper functions:
 
-* You can call Jlink.exe from command line with the commandfile as an argument, or you can use the batch file, program_info0.bat, which simply calls jlink with the commanderScript file as an argument. Note, you may have to include the complete paths to jlink.exe and the commanderfile. Also note, you need to navigate your CMD into this directory first.
+[![programming script highlight](https://raw.githubusercontent.com/sparkfun/SparkFun_LoRa_Thing_Plus_expLoRaBLE/master/Documentation/programming_script_screenshot_highligh.png)](https://raw.githubusercontent.com/sparkfun/SparkFun_LoRa_Thing_Plus_expLoRaBLE/master/Documentation/programming_script_screenshot_highligh.png)
 
-C:\Users\pete.lewis\Documents\GitHub\SparkFun_LoRa_Thing_Plus_expLoRaBLE\Bootloader>"C:\Program Files (x86)\SEGGER\JLink\jlink.exe" -CommanderScript jlink-prog-info0.txt
+* You can call Jlink.exe from command line with the commandfile as an argument, or you can use the batch file, program_info0.bat, which simply calls jlink with the commanderScript file as an argument. Note, you may have to include the complete paths to jlink.exe and the commanderfile. Also note, you need to navigate your CMD into this directory first.
 
 This is the readout you should see:
 
