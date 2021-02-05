@@ -16,7 +16,7 @@ Repository Contents
 
 Documentation
 --------------
-* **[Hookup Guide](https://learn.sparkfun.com/tutorials/sparkfun-explorable-hookup-guide)** - Basic hookup guide for the [SparkFun LoRa Thing Plus - expLoRaBLE (WRL-17506)](https://www.sparkfun.com/products/17506).
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/sparkfun-explorable-hookup-guide)** - Basic hookup guide for the [LoRa Thing Plus - expLoRaBLE](https://www.sparkfun.com/products/17506).
 
 License Information
 -------------------
