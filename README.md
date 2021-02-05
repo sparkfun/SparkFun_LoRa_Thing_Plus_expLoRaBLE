@@ -1,11 +1,11 @@
 SparkFun LoRa Thing Plus - expLoRaBLE
 ========================================
 
-![SparkFun LoRa Thing Plus - expLoRaBLE](URL for picture of part)
+![SparkFun LoRa Thing Plus - expLoRaBLE](https://cdn.sparkfun.com//assets/parts/1/6/5/5/8/17506-SparkFun_LoRa_Thing_Plus_____expLoRaBLE-01.jpg)
 
 [*SparkFun LoRa Thing Plus - expLoRaBLE (WRL-17506)*](https://www.sparkfun.com/products/17506)
 
-<The SparkFun LoRa Thing Plus - expLoRaBLE is a wireless development board in Thing Plus form factor that includes the NM180100 LoRa® Bluetooth® 5 Low Energy Module. It is a global IoT solution ideal for long range, low power applications combining the transmit power of Semtech's LoRa® SX1262 with the processing power of Ambiq Micro's Apollo3 Blue.>
+The SparkFun LoRa Thing Plus - expLoRaBLE is a wireless development board in Thing Plus form factor that includes the NM180100 LoRa® Bluetooth® 5 Low Energy SiP. It is a global IoT solution ideal for long range, low power applications combining the transmit power of Semtech's LoRa® SX1262 with the processing power of Ambiq Micro's Apollo3 Blue.
 
 Repository Contents
 -------------------
@@ -16,7 +16,7 @@ Repository Contents
 
 Documentation
 --------------
-* **[Hookup Guide](Learn.SparkFun URL)** - Basic hookup guide for the <PRODUCT NAME>.
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/sparkfun-explorable-hookup-guide)** - Basic hookup guide for the [SparkFun LoRa Thing Plus - expLoRaBLE (WRL-17506)](https://www.sparkfun.com/products/17506).
 
 License Information
 -------------------
